@@ -9,7 +9,7 @@ begin
     s.name = "archive.org"
     s.summary = %Q{TODO}
     s.email = "papyromancer@papyromancer.com"
-    s.homepage = "http://github.com/papyromancer/archive.org"
+    s.homepage = "http://github.com/papyromancer/archive"
     s.description = "TODO"
     s.authors = ["papyromancer"]
   end
@@ -25,7 +25,7 @@ end
 
 Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title    = 'archive.org'
+  rdoc.title    = 'archive'
   rdoc.options << '--line-numbers' << '--inline-source'
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')

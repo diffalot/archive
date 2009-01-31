@@ -1,9 +1,9 @@
-archive.org
+archive
 ===========
 
-Description goes here.
+This is a gem for storing files on The Internet Archive, http://Archive.org/ .
 
 COPYRIGHT
 =========
 
-Copyright (c) 2009 papyromancer. See LICENSE for details.
+Copyright (c) 2009 Papyromancer. See LICENSE for details.
