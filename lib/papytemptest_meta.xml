@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <noindex>true</noindex>
+  <mediatype>movies</mediatype>
+  <collection>test_collection</collection>
+  <title>papytemptest</title>
+  <description>a description</description>
+  <subject>keyword one; keyword two</subject>
+  <creator>author</creator>
+  <licenseurl>http://creativecommons.org/licenses/by/3.0/us/</licenseurl>
+  <identifier>papytemptest</identifier>
+  <uploader>papyromancer@yahoo.com</uploader>
+  <addeddate>2009-02-04 20:40:16</addeddate>
+  <publicdate>2009-02-04 20:40:31</publicdate>
+</metadata>

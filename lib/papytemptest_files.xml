@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+  <file name="papytemptest_files.xml" source="original">
+    <format>Metadata</format>
+    <md5>e80f0970cc356f45385fed9a39febc5f</md5>
+    <sha1>8f71f6fb3bf19fff2337eb42eefc426362f49f7c</sha1>
+  </file>
+  <file name="papytemptest_meta.xml" source="original">
+    <format>Metadata</format>
+    <md5>7afe012889f5a80a9c96d87e5391071b</md5>
+    <sha1>fb73a51697d2534c8d8c2a0015233bcc099011d8</sha1>
+  </file>
+  <file name="test.jpg" source="original">
+    <title>test</title>
+    <format>JPEG</format>
+    <md5>4d19b367def8748ef987c2c95907a40b</md5>
+    <sha1>d267bc0a2c84a03ad76c14f71619209b110d5fdb</sha1>
+  </file>
+</files>
