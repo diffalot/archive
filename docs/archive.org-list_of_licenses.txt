@@ -1,0 +1,332 @@
+
+Atribuição-Uso Não-Comercial 2.5 Brasil					http://creativecommons.org/licenses/by-nc/2.5/br/
+Attribution								http://creativecommons.org/licenses/by/2.5/
+Attribution 1.0 Finland							http://creativecommons.org/licenses/by/1.0/fi/
+Attribution 2.0 Austria							http://creativecommons.org/licenses/by/2.0/at/
+Attribution 2.0 Belgium							http://creativecommons.org/licenses/by/2.0/be/
+Attribution 2.0 Chile							http://creativecommons.org/licenses/by/2.0/cl/
+Attribution 2.0 England & Wales						http://creativecommons.org/licenses/by/2.0/uk/
+Attribution 2.0 France							http://creativecommons.org/licenses/by/2.0/fr/
+Attribution 2.0 Germany							http://creativecommons.org/licenses/by/2.0/de/
+Attribution 2.0 Italy							http://creativecommons.org/licenses/by/2.0/it/
+Attribution 2.0 Korea							http://creativecommons.org/licenses/by/2.0/kr/
+Attribution 2.0 Taiwan							http://creativecommons.org/licenses/by/2.0/tw/
+Attribution 2.1 Japan							http://creativecommons.org/licenses/by/2.1/jp/
+Attribution 2.5 Argentina						http://creativecommons.org/licenses/by/2.5/ar/
+Attribution 2.5 Australia						http://creativecommons.org/licenses/by/2.5/au/
+Attribution 2.5 Brazil							http://creativecommons.org/licenses/by/2.5/br/
+Attribution 2.5 Canada							http://creativecommons.org/licenses/by/2.5/ca/
+Attribution 2.5 China Mainland						http://creativecommons.org/licenses/by/2.5/cn/
+Attribution 2.5 Colombia						http://creativecommons.org/licenses/by/2.5/co/
+Attribution 2.5 Croatia							http://creativecommons.org/licenses/by/2.5/hr/
+Attribution 2.5 Denmark							http://creativecommons.org/licenses/by/2.5/dk/
+Attribution 2.5 Hungary							http://creativecommons.org/licenses/by/2.5/hu/
+Attribution 2.5 India							http://creativecommons.org/licenses/by/2.5/in/
+Attribution 2.5 Israel							http://creativecommons.org/licenses/by/2.5/il/
+Attribution 2.5 Italy							http://creativecommons.org/licenses/by/2.5/it/
+Attribution 2.5 Macedonia						http://creativecommons.org/licenses/by/2.5/mk/
+Attribution 2.5 Malaysia						http://creativecommons.org/licenses/by/2.5/my/
+Attribution 2.5 Malta							http://creativecommons.org/licenses/by/2.5/mt/
+Attribution 2.5 Mexico							http://creativecommons.org/licenses/by/2.5/mx/
+Attribution 2.5 Netherlands						http://creativecommons.org/licenses/by/2.5/nl/
+Attribution 2.5 Peru							http://creativecommons.org/licenses/by/2.5/pe/
+Attribution 2.5 Portugal						http://creativecommons.org/licenses/by/2.5/pt/
+Attribution 2.5 Slovenia						http://creativecommons.org/licenses/by/2.5/si/
+Attribution 2.5 South Africa						http://creativecommons.org/licenses/by/2.5/za/
+Attribution 2.5 Spain							http://creativecommons.org/licenses/by/2.5/es/
+Attribution 2.5 Sweden							http://creativecommons.org/licenses/by/2.5/se/
+Attribution 2.5 Switzerland						http://creativecommons.org/licenses/by/2.5/ch/
+Attribution 2.5 UK: Scotland						http://creativecommons.org/licenses/by/2.5/scotland/
+Attribution 3.0								http://creativecommons.org/licenses/by/3.0/
+Attribution 3.0 Austria							http://creativecommons.org/licenses/by/3.0/at/
+Attribution 3.0 Croatia							http://creativecommons.org/licenses/by/3.0/hr/
+Attribution 3.0 Germany							http://creativecommons.org/licenses/by/3.0/de/
+Attribution 3.0 Greece							http://creativecommons.org/licenses/by/3.0/gr/
+Attribution 3.0 Hong Kong						http://creativecommons.org/licenses/by/3.0/hk/
+Attribution 3.0 Luxembourg						http://creativecommons.org/licenses/by/3.0/lu/
+Attribution 3.0 Netherlands						http://creativecommons.org/licenses/by/3.0/nl/
+Attribution 3.0 New Zealand						http://creativecommons.org/licenses/by/3.0/nz/
+Attribution 3.0 Philippines						http://creativecommons.org/licenses/by/3.0/ph/
+Attribution 3.0 Puerto Rico						http://creativecommons.org/licenses/by/3.0/pr/
+Attribution 3.0 Serbia							http://creativecommons.org/licenses/by/3.0/rs/
+Attribution 3.0 Singapore						http://creativecommons.org/licenses/by/3.0/sg/
+Attribution 3.0 Spain							http://creativecommons.org/licenses/by/3.0/es/
+Attribution 3.0 United States						http://creativecommons.org/licenses/by/3.0/us/
+Attribution-No Derivative Works 2.0 Chile				http://creativecommons.org/licenses/by-nd/2.0/cl/
+Attribution-No Derivative Works 2.0 Korea				http://creativecommons.org/licenses/by-nd/2.0/kr/
+Attribution-No Derivative Works 2.1 Japan				http://creativecommons.org/licenses/by-nd/2.1/jp/
+Attribution-No Derivative Works 2.5 Argentina				http://creativecommons.org/licenses/by-nd/2.5/ar/
+Attribution-No Derivative Works 2.5 Australia				http://creativecommons.org/licenses/by-nd/2.5/au/
+Attribution-No Derivative Works 2.5 Bulgaria				http://creativecommons.org/licenses/by-nd/2.5/bg/
+Attribution-No Derivative Works 2.5 Canada				http://creativecommons.org/licenses/by-nd/2.5/ca/
+Attribution-No Derivative Works 2.5 China Mainland			http://creativecommons.org/licenses/by-nd/2.5/cn/
+Attribution-No Derivative Works 2.5 Colombia				http://creativecommons.org/licenses/by-nd/2.5/co/
+Attribution-No Derivative Works 2.5 Croatia				http://creativecommons.org/licenses/by-nd/2.5/hr/
+Attribution-No Derivative Works 2.5 Denmark				http://creativecommons.org/licenses/by-nd/2.5/dk/
+Attribution-No Derivative Works 2.5 India				http://creativecommons.org/licenses/by-nd/2.5/in/
+Attribution-No Derivative Works 2.5 Israel				http://creativecommons.org/licenses/by-nd/2.5/il/
+Attribution-No Derivative Works 2.5 Malaysia				http://creativecommons.org/licenses/by-nd/2.5/my/
+Attribution-No Derivative Works 2.5 Mexico				http://creativecommons.org/licenses/by-nd/2.5/mx/
+Attribution-No Derivative Works 2.5 Peru				http://creativecommons.org/licenses/by-nd/2.5/pe/
+Attribution-No Derivative Works 2.5 Poland				http://creativecommons.org/licenses/by-nd/2.5/pl/
+Attribution-No Derivative Works 2.5 Portugal				http://creativecommons.org/licenses/by-nd/2.5/pt/
+Attribution-No Derivative Works 2.5 Slovenia				http://creativecommons.org/licenses/by-nd/2.5/si/
+Attribution-No Derivative Works 2.5 South Africa			http://creativecommons.org/licenses/by-nd/2.5/za/
+Attribution-No Derivative Works 2.5 Sweden				http://creativecommons.org/licenses/by-nd/2.5/se/
+Attribution-No Derivative Works 2.5 Switzerland				http://creativecommons.org/licenses/by-nd/2.5/ch/
+Attribution-No Derivative Works 2.5 Taiwan				http://creativecommons.org/licenses/by-nd/2.5/tw/
+Attribution-No Derivative Works 2.5 UK: Scotland			http://creativecommons.org/licenses/by-nd/2.5/scotland/
+Attribution-No Derivative Works 3.0					http://creativecommons.org/licenses/by-nd/3.0/
+Attribution-No Derivative Works 3.0 Austria				http://creativecommons.org/licenses/by-nd/3.0/at/
+Attribution-No Derivative Works 3.0 Croatia				http://creativecommons.org/licenses/by-nd/3.0/hr/
+Attribution-No Derivative Works 3.0 Ecuador				http://creativecommons.org/licenses/by-nd/3.0/ec/
+Attribution-No Derivative Works 3.0 Germany				http://creativecommons.org/licenses/by-nd/3.0/de/
+Attribution-No Derivative Works 3.0 Greece				http://creativecommons.org/licenses/by-nd/3.0/gr/
+Attribution-No Derivative Works 3.0 Netherlands				http://creativecommons.org/licenses/by-nd/3.0/nl/
+Attribution-No Derivative Works 3.0 New Zealand				http://creativecommons.org/licenses/by-nd/3.0/nz/
+Attribution-No Derivative Works 3.0 Philippines				http://creativecommons.org/licenses/by-nd/3.0/ph/
+Attribution-No Derivative Works 3.0 Puerto Rico				http://creativecommons.org/licenses/by-nd/3.0/pr/
+Attribution-No Derivative Works 3.0 Serbia				http://creativecommons.org/licenses/by-nd/3.0/rs/
+Attribution-No Derivative Works 3.0 Singapore				http://creativecommons.org/licenses/by-nd/3.0/sg/
+Attribution-No Derivative Works 3.0 Spain				http://creativecommons.org/licenses/by-nd/3.0/es/
+Attribution-No Derivative Works 3.0 United States			http://creativecommons.org/licenses/by-nd/3.0/us/
+Attribution-NoDerivs							http://creativecommons.org/licenses/by-nd/2.5/
+Attribution-NoDerivs 2.0 Austria					http://creativecommons.org/licenses/by-nd/2.0/at/
+Attribution-NoDerivs 2.0 Belgium					http://creativecommons.org/licenses/by-nd/2.0/be/
+Attribution-NoDerivs 2.0 England & Wales				http://creativecommons.org/licenses/by-nd/2.0/uk/
+Attribution-NoDerivs 2.0 France						http://creativecommons.org/licenses/by-nd/2.0/fr/
+Attribution-NoDerivs 2.0 Germany					http://creativecommons.org/licenses/by-nd/2.0/de/
+Attribution-NoDerivs 2.0 Italy						http://creativecommons.org/licenses/by-nd/2.0/it/
+Attribution-NoDerivs 2.5 Brazil						http://creativecommons.org/licenses/by-nd/2.5/br/
+Attribution-NoDerivs 2.5 Netherlands					http://creativecommons.org/licenses/by-nd/2.5/nl/
+Attribution-NoDerivs 2.5 Spain						http://creativecommons.org/licenses/by-nd/2.5/es/
+Attribution-NoDerivs-NonCommercial					http://creativecommons.org/licenses/by-nd-nc/1.0/
+Attribution-NonCommercial						http://creativecommons.org/licenses/by-nc/2.5/
+Attribution-NonCommercial 2.0 France					http://creativecommons.org/licenses/by-nc/2.0/fr/
+Attribution-NonCommercial 2.0 Germany					http://creativecommons.org/licenses/by-nc/2.0/de/
+Attribution-NonCommercial 2.0 Italy					http://creativecommons.org/licenses/by-nc/2.0/it/
+Attribution-NonCommercial 2.0 UK: England & Wales			http://creativecommons.org/licenses/by-nc/2.0/uk/
+Attribution-NonCommercial 2.1 Australia					http://creativecommons.org/licenses/by-nc/2.1/au/
+Attribution-NonCommercial 2.5						http://creativecommons.org/licenses/by-nc/2.5/ch/
+Attribution-NonCommercial 2.5 Canada					http://creativecommons.org/licenses/by-nc/2.5/ca/
+Attribution-NonCommercial 2.5 Netherlands				http://creativecommons.org/licenses/by-nc/2.5/nl/
+Attribution-NonCommercial 2.5 Spain					http://creativecommons.org/licenses/by-nc/2.5/es/
+Attribution-NonCommercial-NoDerivs					http://creativecommons.org/licenses/by-nc-nd/2.5/
+Attribution-NonCommercial-NoDerivs 2.0 Austria				http://creativecommons.org/licenses/by-nc-nd/2.0/at/
+Attribution-NonCommercial-NoDerivs 2.0 Belgium				http://creativecommons.org/licenses/by-nc-nd/2.0/be/
+Attribution-NonCommercial-NoDerivs 2.0 Chile				http://creativecommons.org/licenses/by-nc-nd/2.0/cl/
+Attribution-NonCommercial-NoDerivs 2.0 England & Wales			http://creativecommons.org/licenses/by-nc-nd/2.0/uk/
+Attribution-NonCommercial-NoDerivs 2.0 France				http://creativecommons.org/licenses/by-nc-nd/2.0/fr/
+Attribution-NonCommercial-NoDerivs 2.0 Germany				http://creativecommons.org/licenses/by-nc-nd/2.0/de/
+Attribution-NonCommercial-NoDerivs 2.0 Italy				http://creativecommons.org/licenses/by-nc-nd/2.0/it/
+Attribution-NonCommercial-NoDerivs 2.0 South Korea			http://creativecommons.org/licenses/by-nc-nd/2.0/kr/
+Attribution-NonCommercial-NoDerivs 2.1 Australia			http://creativecommons.org/licenses/by-nc-nd/2.1/au/
+Attribution-NonCommercial-NoDerivs 2.1 Japan				http://creativecommons.org/licenses/by-nc-nd/2.1/jp/
+Attribution-NonCommercial-NoDerivs 2.5 Brazil				http://creativecommons.org/licenses/by-nc-nd/2.5/br/
+Attribution-NonCommercial-NoDerivs 2.5 Canada				http://creativecommons.org/licenses/by-nc-nd/2.5/ca/
+Attribution-NonCommercial-NoDerivs 2.5 Croatia				http://creativecommons.org/licenses/by-nc-nd/2.5/hr/
+Attribution-NonCommercial-NoDerivs 2.5 Italy				http://creativecommons.org/licenses/by-nc-nd/2.5/it/
+Attribution-NonCommercial-NoDerivs 2.5 Netherlands			http://creativecommons.org/licenses/by-nc-nd/2.5/nl/
+Attribution-NonCommercial-NoDerivs 2.5 Spain				http://creativecommons.org/licenses/by-nc-nd/2.5/es/
+Attribution-NonCommercial-ShareAlike					http://creativecommons.org/licenses/by-nc-sa/2.5/
+Attribution-NonCommercial-ShareAlike 2.0 Belgium			http://creativecommons.org/licenses/by-nc-sa/2.0/be/
+Attribution-NonCommercial-ShareAlike 2.0 Chile				http://creativecommons.org/licenses/by-nc-sa/2.0/cl/
+Attribution-NonCommercial-ShareAlike 2.0 England & Wales		http://creativecommons.org/licenses/by-nc-sa/2.0/uk/
+Attribution-NonCommercial-ShareAlike 2.0 France				http://creativecommons.org/licenses/by-nc-sa/2.0/fr/
+Attribution-NonCommercial-ShareAlike 2.0 Germany			http://creativecommons.org/licenses/by-nc-sa/2.0/de/
+Attribution-NonCommercial-ShareAlike 2.0 Italy				http://creativecommons.org/licenses/by-nc-sa/2.0/it/
+Attribution-NonCommercial-ShareAlike 2.1 Australia			http://creativecommons.org/licenses/by-nc-sa/2.1/au/
+Attribution-NonCommercial-ShareAlike 2.1 Japan				http://creativecommons.org/licenses/by-nc-sa/2.1/jp/
+Attribution-NonCommercial-ShareAlike 2.5				http://creativecommons.org/licenses/by-nc-sa/2.5/ch/
+Attribution-NonCommercial-ShareAlike 2.5 Brazil				http://creativecommons.org/licenses/by-nc-sa/2.5/br/
+Attribution-NonCommercial-ShareAlike 2.5 Netherlands			http://creativecommons.org/licenses/by-nc-sa/2.5/nl/
+Attribution-NonCommercial-ShareAlike 2.5 Spain				http://creativecommons.org/licenses/by-nc-sa/2.5/es/
+Attribution-Noncommercial 1.0 Finland					http://creativecommons.org/licenses/by-nc/1.0/fi/
+Attribution-Noncommercial 2.0 Austria					http://creativecommons.org/licenses/by-nc/2.0/at/
+Attribution-Noncommercial 2.0 Belgium					http://creativecommons.org/licenses/by-nc/2.0/be/
+Attribution-Noncommercial 2.0 Chile					http://creativecommons.org/licenses/by-nc/2.0/cl/
+Attribution-Noncommercial 2.0 Korea					http://creativecommons.org/licenses/by-nc/2.0/kr/
+Attribution-Noncommercial 2.1 Japan					http://creativecommons.org/licenses/by-nc/2.1/jp/
+Attribution-Noncommercial 2.5 Argentina					http://creativecommons.org/licenses/by-nc/2.5/ar/
+Attribution-Noncommercial 2.5 Australia					http://creativecommons.org/licenses/by-nc/2.5/au/
+Attribution-Noncommercial 2.5 Bulgaria					http://creativecommons.org/licenses/by-nc/2.5/bg/
+Attribution-Noncommercial 2.5 China Mainland				http://creativecommons.org/licenses/by-nc/2.5/cn/
+Attribution-Noncommercial 2.5 Colombia					http://creativecommons.org/licenses/by-nc/2.5/co/
+Attribution-Noncommercial 2.5 Croatia					http://creativecommons.org/licenses/by-nc/2.5/hr/
+Attribution-Noncommercial 2.5 Denmark					http://creativecommons.org/licenses/by-nc/2.5/dk/
+Attribution-Noncommercial 2.5 Hungary					http://creativecommons.org/licenses/by-nc/2.5/hu/
+Attribution-Noncommercial 2.5 India					http://creativecommons.org/licenses/by-nc/2.5/in/
+Attribution-Noncommercial 2.5 Macedonia					http://creativecommons.org/licenses/by-nc/2.5/mk/
+Attribution-Noncommercial 2.5 Malaysia					http://creativecommons.org/licenses/by-nc/2.5/my/
+Attribution-Noncommercial 2.5 Mexico					http://creativecommons.org/licenses/by-nc/2.5/mx/
+Attribution-Noncommercial 2.5 Peru					http://creativecommons.org/licenses/by-nc/2.5/pe/
+Attribution-Noncommercial 2.5 Poland					http://creativecommons.org/licenses/by-nc/2.5/pl/
+Attribution-Noncommercial 2.5 Portugal					http://creativecommons.org/licenses/by-nc/2.5/pt/
+Attribution-Noncommercial 2.5 Slovenia					http://creativecommons.org/licenses/by-nc/2.5/si/
+Attribution-Noncommercial 2.5 South Africa				http://creativecommons.org/licenses/by-nc/2.5/za/
+Attribution-Noncommercial 2.5 Sweden					http://creativecommons.org/licenses/by-nc/2.5/se/
+Attribution-Noncommercial 2.5 Taiwan					http://creativecommons.org/licenses/by-nc/2.5/tw/
+Attribution-Noncommercial 2.5 UK: Scotland				http://creativecommons.org/licenses/by-nc/2.5/scotland/
+Attribution-Noncommercial 3.0						http://creativecommons.org/licenses/by-nc/3.0/
+Attribution-Noncommercial 3.0 Austria					http://creativecommons.org/licenses/by-nc/3.0/at/
+Attribution-Noncommercial 3.0 Ecuador					http://creativecommons.org/licenses/by-nc/3.0/ec/
+Attribution-Noncommercial 3.0 Germany					http://creativecommons.org/licenses/by-nc/3.0/de/
+Attribution-Noncommercial 3.0 Greece					http://creativecommons.org/licenses/by-nc/3.0/gr/
+Attribution-Noncommercial 3.0 Netherlands				http://creativecommons.org/licenses/by-nc/3.0/nl/
+Attribution-Noncommercial 3.0 New Zealand				http://creativecommons.org/licenses/by-nc/3.0/nz/
+Attribution-Noncommercial 3.0 Norway					http://creativecommons.org/licenses/by-nc/3.0/no/
+Attribution-Noncommercial 3.0 Philippines				http://creativecommons.org/licenses/by-nc/3.0/ph/
+Attribution-Noncommercial 3.0 Puerto Rico				http://creativecommons.org/licenses/by-nc/3.0/pr/
+Attribution-Noncommercial 3.0 Romania					http://creativecommons.org/licenses/by-nc/3.0/ro/
+Attribution-Noncommercial 3.0 Spain					http://creativecommons.org/licenses/by-nc/3.0/es/
+Attribution-Noncommercial 3.0 United States				http://creativecommons.org/licenses/by-nc/3.0/us/
+Attribution-Noncommercial-No Derivative Works 1.0 Finland		http://creativecommons.org/licenses/by-nd-nc/1.0/fi/
+Attribution-Noncommercial-No Derivative Works 2.5 Argentina		http://creativecommons.org/licenses/by-nc-nd/2.5/ar/
+Attribution-Noncommercial-No Derivative Works 2.5 Australia		http://creativecommons.org/licenses/by-nc-nd/2.5/au/
+Attribution-Noncommercial-No Derivative Works 2.5 China Mainland	http://creativecommons.org/licenses/by-nc-nd/2.5/cn/
+Attribution-Noncommercial-No Derivative Works 2.5 Colombia		http://creativecommons.org/licenses/by-nc-nd/2.5/co/
+Attribution-Noncommercial-No Derivative Works 2.5 Denmark		http://creativecommons.org/licenses/by-nc-nd/2.5/dk/
+Attribution-Noncommercial-No Derivative Works 2.5 Hungary		http://creativecommons.org/licenses/by-nc-nd/2.5/hu/
+Attribution-Noncommercial-No Derivative Works 2.5 India			http://creativecommons.org/licenses/by-nc-nd/2.5/in/
+Attribution-Noncommercial-No Derivative Works 2.5 Israel		http://creativecommons.org/licenses/by-nc-nd/2.5/il/
+Attribution-Noncommercial-No Derivative Works 2.5 Macedonia		http://creativecommons.org/licenses/by-nc-nd/2.5/mk/
+Attribution-Noncommercial-No Derivative Works 2.5 Malaysia		http://creativecommons.org/licenses/by-nc-nd/2.5/my/
+Attribution-Noncommercial-No Derivative Works 2.5 Malta			http://creativecommons.org/licenses/by-nc-nd/2.5/mt/
+Attribution-Noncommercial-No Derivative Works 2.5 Mexico		http://creativecommons.org/licenses/by-nc-nd/2.5/mx/
+Attribution-Noncommercial-No Derivative Works 2.5 Peru			http://creativecommons.org/licenses/by-nc-nd/2.5/pe/
+Attribution-Noncommercial-No Derivative Works 2.5 Portugal		http://creativecommons.org/licenses/by-nc-nd/2.5/pt/
+Attribution-Noncommercial-No Derivative Works 2.5 Slovenia		http://creativecommons.org/licenses/by-nc-nd/2.5/si/
+Attribution-Noncommercial-No Derivative Works 2.5 South Africa		http://creativecommons.org/licenses/by-nc-nd/2.5/za/
+Attribution-Noncommercial-No Derivative Works 2.5 Sweden		http://creativecommons.org/licenses/by-nc-nd/2.5/se/
+Attribution-Noncommercial-No Derivative Works 2.5 Switzerland		http://creativecommons.org/licenses/by-nc-nd/2.5/ch/
+Attribution-Noncommercial-No Derivative Works 2.5 Taiwan		http://creativecommons.org/licenses/by-nc-nd/2.5/tw/
+Attribution-Noncommercial-No Derivative Works 2.5 UK: Scotland		http://creativecommons.org/licenses/by-nc-nd/2.5/scotland/
+Attribution-Noncommercial-No Derivative Works 3.0			http://creativecommons.org/licenses/by-nc-nd/3.0/
+Attribution-Noncommercial-No Derivative Works 3.0 Austria		http://creativecommons.org/licenses/by-nc-nd/3.0/at/
+Attribution-Noncommercial-No Derivative Works 3.0 Croatia		http://creativecommons.org/licenses/by-nc-nd/3.0/hr/
+Attribution-Noncommercial-No Derivative Works 3.0 Ecuador		http://creativecommons.org/licenses/by-nc-nd/3.0/ec/
+Attribution-Noncommercial-No Derivative Works 3.0 Germany		http://creativecommons.org/licenses/by-nc-nd/3.0/de/
+Attribution-Noncommercial-No Derivative Works 3.0 Greece		http://creativecommons.org/licenses/by-nc-nd/3.0/gr/
+Attribution-Noncommercial-No Derivative Works 3.0 Hong Kong		http://creativecommons.org/licenses/by-nc-nd/3.0/hk/
+Attribution-Noncommercial-No Derivative Works 3.0 Luxembourg		http://creativecommons.org/licenses/by-nc-nd/3.0/lu/
+Attribution-Noncommercial-No Derivative Works 3.0 Netherlands		http://creativecommons.org/licenses/by-nc-nd/3.0/nl/
+Attribution-Noncommercial-No Derivative Works 3.0 New Zealand		http://creativecommons.org/licenses/by-nc-nd/3.0/nz/
+Attribution-Noncommercial-No Derivative Works 3.0 Norway		http://creativecommons.org/licenses/by-nc-nd/3.0/no/
+Attribution-Noncommercial-No Derivative Works 3.0 Philippines		http://creativecommons.org/licenses/by-nc-nd/3.0/ph/
+Attribution-Noncommercial-No Derivative Works 3.0 Puerto Rico		http://creativecommons.org/licenses/by-nc-nd/3.0/pr/
+Attribution-Noncommercial-No Derivative Works 3.0 Romania		http://creativecommons.org/licenses/by-nc-nd/3.0/ro/
+Attribution-Noncommercial-No Derivative Works 3.0 Serbia		http://creativecommons.org/licenses/by-nc-nd/3.0/rs/
+Attribution-Noncommercial-No Derivative Works 3.0 Singapore		http://creativecommons.org/licenses/by-nc-nd/3.0/sg/
+Attribution-Noncommercial-No Derivative Works 3.0 Spain			http://creativecommons.org/licenses/by-nc-nd/3.0/es/
+Attribution-Noncommercial-No Derivative Works 3.0 United States		http://creativecommons.org/licenses/by-nc-nd/3.0/us/
+Attribution-Noncommercial-Share Alike 1.0 Finland			http://creativecommons.org/licenses/by-nc-sa/1.0/fi/
+Attribution-Noncommercial-Share Alike 2.0 Austria			http://creativecommons.org/licenses/by-nc-sa/2.0/at/
+Attribution-Noncommercial-Share Alike 2.0 Korea				http://creativecommons.org/licenses/by-nc-sa/2.0/kr/
+Attribution-Noncommercial-Share Alike 2.5 Argentina			http://creativecommons.org/licenses/by-nc-sa/2.5/ar/
+Attribution-Noncommercial-Share Alike 2.5 Australia			http://creativecommons.org/licenses/by-nc-sa/2.5/au/
+Attribution-Noncommercial-Share Alike 2.5 Bulgaria			http://creativecommons.org/licenses/by-nc-sa/2.5/bg/
+Attribution-Noncommercial-Share Alike 2.5 Canada			http://creativecommons.org/licenses/by-nc-sa/2.5/ca/
+Attribution-Noncommercial-Share Alike 2.5 China Mainland		http://creativecommons.org/licenses/by-nc-sa/2.5/cn/
+Attribution-Noncommercial-Share Alike 2.5 Colombia			http://creativecommons.org/licenses/by-nc-sa/2.5/co/
+Attribution-Noncommercial-Share Alike 2.5 Croatia			http://creativecommons.org/licenses/by-nc-sa/2.5/hr/
+Attribution-Noncommercial-Share Alike 2.5 Denmark			http://creativecommons.org/licenses/by-nc-sa/2.5/dk/
+Attribution-Noncommercial-Share Alike 2.5 Hungary			http://creativecommons.org/licenses/by-nc-sa/2.5/hu/
+Attribution-Noncommercial-Share Alike 2.5 India				http://creativecommons.org/licenses/by-nc-sa/2.5/in/
+Attribution-Noncommercial-Share Alike 2.5 Israel			http://creativecommons.org/licenses/by-nc-sa/2.5/il/
+Attribution-Noncommercial-Share Alike 2.5 Italy				http://creativecommons.org/licenses/by-nc-sa/2.5/it/
+Attribution-Noncommercial-Share Alike 2.5 Macedonia			http://creativecommons.org/licenses/by-nc-sa/2.5/mk/
+Attribution-Noncommercial-Share Alike 2.5 Malaysia			http://creativecommons.org/licenses/by-nc-sa/2.5/my/
+Attribution-Noncommercial-Share Alike 2.5 Malta				http://creativecommons.org/licenses/by-nc-sa/2.5/mt/
+Attribution-Noncommercial-Share Alike 2.5 Mexico			http://creativecommons.org/licenses/by-nc-sa/2.5/mx/
+Attribution-Noncommercial-Share Alike 2.5 Peru				http://creativecommons.org/licenses/by-nc-sa/2.5/pe/
+Attribution-Noncommercial-Share Alike 2.5 Portugal			http://creativecommons.org/licenses/by-nc-sa/2.5/pt/
+Attribution-Noncommercial-Share Alike 2.5 Slovenia			http://creativecommons.org/licenses/by-nc-sa/2.5/si/
+Attribution-Noncommercial-Share Alike 2.5 South Africa			http://creativecommons.org/licenses/by-nc-sa/2.5/za/
+Attribution-Noncommercial-Share Alike 2.5 Sweden			http://creativecommons.org/licenses/by-nc-sa/2.5/se/
+Attribution-Noncommercial-Share Alike 2.5 Taiwan			http://creativecommons.org/licenses/by-nc-sa/2.5/tw/
+Attribution-Noncommercial-Share Alike 2.5 UK: Scotland			http://creativecommons.org/licenses/by-nc-sa/2.5/scotland/
+Attribution-Noncommercial-Share Alike 3.0				http://creativecommons.org/licenses/by-nc-sa/3.0/
+Attribution-Noncommercial-Share Alike 3.0 Austria			http://creativecommons.org/licenses/by-nc-sa/3.0/at/
+Attribution-Noncommercial-Share Alike 3.0 Croatia			http://creativecommons.org/licenses/by-nc-sa/3.0/hr/
+Attribution-Noncommercial-Share Alike 3.0 Ecuador			http://creativecommons.org/licenses/by-nc-sa/3.0/ec/
+Attribution-Noncommercial-Share Alike 3.0 Germany			http://creativecommons.org/licenses/by-nc-sa/3.0/de/
+Attribution-Noncommercial-Share Alike 3.0 Greece			http://creativecommons.org/licenses/by-nc-sa/3.0/gr/
+Attribution-Noncommercial-Share Alike 3.0 Hong Kong			http://creativecommons.org/licenses/by-nc-sa/3.0/hk/
+Attribution-Noncommercial-Share Alike 3.0 Luxembourg			http://creativecommons.org/licenses/by-nc-sa/3.0/lu/
+Attribution-Noncommercial-Share Alike 3.0 Netherlands			http://creativecommons.org/licenses/by-nc-sa/3.0/nl/
+Attribution-Noncommercial-Share Alike 3.0 New Zealand			http://creativecommons.org/licenses/by-nc-sa/3.0/nz/
+Attribution-Noncommercial-Share Alike 3.0 Norway			http://creativecommons.org/licenses/by-nc-sa/3.0/no/
+Attribution-Noncommercial-Share Alike 3.0 Philippines			http://creativecommons.org/licenses/by-nc-sa/3.0/ph/
+Attribution-Noncommercial-Share Alike 3.0 Puerto Rico			http://creativecommons.org/licenses/by-nc-sa/3.0/pr/
+Attribution-Noncommercial-Share Alike 3.0 Romania			http://creativecommons.org/licenses/by-nc-sa/3.0/ro/
+Attribution-Noncommercial-Share Alike 3.0 Serbia			http://creativecommons.org/licenses/by-nc-sa/3.0/rs/
+Attribution-Noncommercial-Share Alike 3.0 Singapore			http://creativecommons.org/licenses/by-nc-sa/3.0/sg/
+Attribution-Noncommercial-Share Alike 3.0 Spain				http://creativecommons.org/licenses/by-nc-sa/3.0/es/
+Attribution-Noncommercial-Share Alike 3.0 United States			http://creativecommons.org/licenses/by-nc-sa/3.0/us/
+Attribution-Share Alike 2.0 Austria					http://creativecommons.org/licenses/by-sa/2.0/at/
+Attribution-Share Alike 2.0 Belgium					http://creativecommons.org/licenses/by-sa/2.0/be/
+Attribution-Share Alike 2.1 Japan					http://creativecommons.org/licenses/by-sa/2.1/jp/
+Attribution-Share Alike 2.5 Argentina					http://creativecommons.org/licenses/by-sa/2.5/ar/
+Attribution-Share Alike 2.5 Australia					http://creativecommons.org/licenses/by-sa/2.5/au/
+Attribution-Share Alike 2.5 Brazil					http://creativecommons.org/licenses/by-sa/2.5/br/
+Attribution-Share Alike 2.5 Canada					http://creativecommons.org/licenses/by-sa/2.5/ca/
+Attribution-Share Alike 2.5 China Mainland				http://creativecommons.org/licenses/by-sa/2.5/cn/
+Attribution-Share Alike 2.5 Colombia					http://creativecommons.org/licenses/by-sa/2.5/co/
+Attribution-Share Alike 2.5 Croatia					http://creativecommons.org/licenses/by-sa/2.5/hr/
+Attribution-Share Alike 2.5 Denmark					http://creativecommons.org/licenses/by-sa/2.5/dk/
+Attribution-Share Alike 2.5 Hungary					http://creativecommons.org/licenses/by-sa/2.5/hu/
+Attribution-Share Alike 2.5 India					http://creativecommons.org/licenses/by-sa/2.5/in/
+Attribution-Share Alike 2.5 Israel					http://creativecommons.org/licenses/by-sa/2.5/il/
+Attribution-Share Alike 2.5 Macedonia					http://creativecommons.org/licenses/by-sa/2.5/mk/
+Attribution-Share Alike 2.5 Malaysia					http://creativecommons.org/licenses/by-sa/2.5/my/
+Attribution-Share Alike 2.5 Netherlands					http://creativecommons.org/licenses/by-sa/2.5/nl/
+Attribution-Share Alike 2.5 Peru					http://creativecommons.org/licenses/by-sa/2.5/pe/
+Attribution-Share Alike 2.5 Poland					http://creativecommons.org/licenses/by-sa/2.5/pl/
+Attribution-Share Alike 2.5 Portugal					http://creativecommons.org/licenses/by-sa/2.5/pt/
+Attribution-Share Alike 2.5 Slovenia					http://creativecommons.org/licenses/by-sa/2.5/si/
+Attribution-Share Alike 2.5 South Africa				http://creativecommons.org/licenses/by-sa/2.5/za/
+Attribution-Share Alike 2.5 Sweden					http://creativecommons.org/licenses/by-sa/2.5/se/
+Attribution-Share Alike 2.5 Switzerland					http://creativecommons.org/licenses/by-sa/2.5/ch/
+Attribution-Share Alike 2.5 Taiwan					http://creativecommons.org/licenses/by-sa/2.5/tw/
+Attribution-Share Alike 2.5 UK: Scotland				http://creativecommons.org/licenses/by-sa/2.5/scotland/
+Attribution-Share Alike 3.0						http://creativecommons.org/licenses/by-sa/3.0/
+Attribution-Share Alike 3.0 Austria					http://creativecommons.org/licenses/by-sa/3.0/at/
+Attribution-Share Alike 3.0 Croatia					http://creativecommons.org/licenses/by-sa/3.0/hr/
+Attribution-Share Alike 3.0 Germany					http://creativecommons.org/licenses/by-sa/3.0/de/
+Attribution-Share Alike 3.0 Greece					http://creativecommons.org/licenses/by-sa/3.0/gr/
+Attribution-Share Alike 3.0 New Zealand					http://creativecommons.org/licenses/by-sa/3.0/nz/
+Attribution-Share Alike 3.0 Norway					http://creativecommons.org/licenses/by-sa/3.0/no/
+Attribution-Share Alike 3.0 Philippines					http://creativecommons.org/licenses/by-sa/3.0/ph/
+Attribution-Share Alike 3.0 Puerto Rico					http://creativecommons.org/licenses/by-sa/3.0/pr/
+Attribution-Share Alike 3.0 Serbia					http://creativecommons.org/licenses/by-sa/3.0/rs/
+Attribution-Share Alike 3.0 Spain					http://creativecommons.org/licenses/by-sa/3.0/es/
+Attribution-Share Alike 3.0 United States				http://creativecommons.org/licenses/by-sa/3.0/us/
+Attribution-ShareAlike							http://creativecommons.org/licenses/by-sa/2.5/
+Attribution-ShareAlike 2.0 Chile					http://creativecommons.org/licenses/by-sa/2.0/cl/
+Attribution-ShareAlike 2.0 England & Wales				http://creativecommons.org/licenses/by-sa/2.0/uk/
+Attribution-ShareAlike 2.0 France					http://creativecommons.org/licenses/by-sa/2.0/fr/
+Attribution-ShareAlike 2.0 Germany					http://creativecommons.org/licenses/by-sa/2.0/de/
+Attribution-ShareAlike 2.0 Italy					http://creativecommons.org/licenses/by-sa/2.0/it/
+Attribution-ShareAlike 2.5						http://creativecommons.org/licenses/by-sa/2.5/mx/
+Attribution-ShareAlike 2.5 Italy					http://creativecommons.org/licenses/by-sa/2.5/it/
+Attribution-ShareAlike 2.5 Spain					http://creativecommons.org/licenses/by-sa/2.5/es/
+Attribuzione-Non commerciale 2.5 Italia					http://creativecommons.org/licenses/by-nc/2.5/it/
+Attribuzione-Non opere derivate 2.5 Italia				http://creativecommons.org/licenses/by-nd/2.5/it/
+GPL 2.0									http://creativecommons.org/licenses/GPL/2.0/
+Music Sharing License							http://creativecommons.org/licenses/by-nc-nd/2.0/deed-music
+Naamsvermelding-Gelijk delen 3.0 Nederland				http://creativecommons.org/licenses/by-sa/3.0/nl/
+NoDerivs								http://creativecommons.org/licenses/nd/1.0/
+NoDerivs-NonCommercial							http://creativecommons.org/licenses/nd-nc/1.0/
+NonCommercial								http://creativecommons.org/licenses/nc/1.0/
+NonCommercial Sampling Plus						http://creativecommons.org/licenses/nc-sampling+/1.0/
+NonCommercial-ShareAlike						http://creativecommons.org/licenses/nc-sa/1.0/
+Public Domain								http://creativecommons.org/licenses/publicdomain/prelinger/
+Public+Domain								http://creativecommons.org/licenses/publicdomain/
+Sampling 1.0								http://creativecommons.org/licenses/sampling/1.0/
+Sampling Plus								http://creativecommons.org/licenses/sampling+/1.0/
+ShareAlike								http://creativecommons.org/licenses/sa/1.0/
+Uznanie autorstwa 2.5 Polska						http://creativecommons.org/licenses/by/2.5/pl/
+Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych		http://creativecommons.org/licenses/by-nc-nd/2.5/pl/
+Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach		http://creativecommons.org/licenses/by-nc-sa/2.5/pl/
+Признание-Некомерсиално-Без произ�					http://creativecommons.org/licenses/by-nc-nd/2.5/bg/
+姓名標示 2.5 台灣							http://creativecommons.org/licenses/by/2.5/tw/

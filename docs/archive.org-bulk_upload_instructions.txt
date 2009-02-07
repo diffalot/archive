@@ -1,0 +1,169 @@
+h1. Advanced Use of the Contribution Engine
+
+/This document is a text conversion of the documentation at
+http://www.archive.org/help/contrib-advanced.php . That file should always
+be understood to supersede this one./
+
+The Internet Archive Contribution Engine supports some advanced functionality to
+enable high volume contributors to more easily (and less interactively) upload
+and import content into the Archive. The advanced functionality consists of
+several parts:
+
+1. FTP Log in with your Internet Archive "library card" username and password to
+   items-uploads.archive.org (NOTE: you must login -- otherwise the server is
+   "readonly").
+
+2. For each item you want to create and upload, create a subdirectory and upload
+  the files you want for that item into that subdirectory via FTP.
+
+3. Each item/subdirectory to be imported must have a two XML files -- one
+   describing the item and one describing its files.
+
+4. Call an URL telling the contribution engine that you are done uploading a
+   specific directory. Results are returned in XML for easy parsing.
+
+In the following sections, the XML formats will be discussed and examples will be given.
+
+---------------------------------------------------------------------------
+
+h2. Preparing the item metadata ( ..._meta.xml )
+
+First of all, every item in the Archive must have a unique identifier. This
+identifier is used to locate the item on our servers and provide the content to
+the users. When you upload a directory, the name of the directory is the unique
+identifier used. Identifiers can only contain letters, numbers, underscores,
+dashes, and dots (nothing else!)
+
+For the sake of clarity, we will use an example of a movie called "My Home
+Movie". Assume the movie is one file named MyHomeMovie.mpeg, is encoded in the
+MPEG2 format, has a running time of 2:30, and was directed by "Joe
+Producer". The unique identifier is MyHomeMovie.
+
+In order to avoid manual intervention with the website, you will need to specify
+all of the above information using two XML files. The files must be named
+IDENTIFIER_meta.xml and IDENTIFIER_files.xml where IDENTIFIER is the unique
+identifier (in our example these files would be called MyHomeMovie_files.xml and
+MyHomeMovies_meta.xml).
+
+The item metadata file (MyHomeMovies_meta.xml) would look like this:
+
+	<metadata>
+	  <collection>opensource_movies</collection>
+	  <mediatype>movies</mediatype>
+	  <title>My Home Movie</title>
+	  <runtime>2:30</runtime>
+	  <director>Joe Producer</director>
+	</metadata>  
+
+All items must have the collection, mediatype, description, and title field
+supplied. You can include whatever other fields you like. Some fields will be
+displayed on the website. For movies these include: date, producer,
+production_company, director, contact, sponsor, description, runtime, color,
+sound, shotlist, segments, credits, and country. For audio these include:
+creator, description, taper, source, runtime, date, and notes. Any other fields
+will be kept in the XML file and will, in the future, be shown on the
+website. For a good example check this metadata file.
+
+You can also select a Creative Commons license for your item by adding a field
+called licenseurl to your metadata file. Choose the URL from the list in
+docs/archive.org-list_of_licenses.txt, based on the type of license you
+want. ("Original here":http://creativecommons.org/licenses/publicdomain/location)
+
+So, for example, if you wanted the Public Domain license, you would put this
+line in your metadata file:
+
+     <licenseurl>http://creativecommons.org/licenses/publicdomain/<licenseurl>
+
+---------------------------------------------------------------------------
+
+h2. Preparing the file metadata ( ..._files.xml )
+
+Additionally, you may describe the files you are uploading so the system knows
+what types of conversions to do (to user accessible formats -- what we refer to
+as "derivative" files). Additionally, this format information can be shown to
+users on our website.
+
+For most users uploading files with common suffixes, some examples:
+
+	.3gp .3gpp .3gpp2 .aif .aiff .avi .cdr .dv .flac .flv .iso .jmpeg .jmpg .jpeg
+	.jpg .m2v .m4v .mjpg .mov .mp1 .mp2 .mp3 .mp4 .mpeg .mpeg1 .mpeg2 .mpeg3 .mpeg4
+	.mpg .ogg .ogm .qt .rm .rmvb .shn .wav .wma .wmv
+
+then our system will automatically setup the _files.xml for you. You simply need
+to make a _files.xml with just the line:
+
+   <files/>
+
+in it. The deriver system will fill out the _files.xml and determine the formats
+for you.
+
+More advanced users comfortable with XML may opt to fill out the formats
+themselves.  
+
+The format name is very important to choose accurately. Upper/lowercase is
+significant. By picking formats from this list, you will be assured to get the
+most possible "derivatives" created from the item's files. This list is
+dynamically generated so check back later for newly acceptable formats. The list
+of acceptable format names is found in docs/archive.org-upload_formats.txt
+
+This file for our example would look like (MyHomeMovie_files.xml):
+
+	<files>
+	  <file name="MyHomeMovie.mpeg">
+	    <format>MPEG2</format>
+	  </file>
+	</files>  
+
+For a good example check the metadata file in docs/archive.org-sample_metadata_file.xml
+("original here":http://ia310110.us.archive.org/0/items/gd73-03-28.aud-nourse.weiner.16886.sbeok.shnf/gd73-03-28.aud-nourse.weiner.16886.sbeok.shnf_meta.xml?cnt=0)
+
+It is highly recommended that contribute as much metadata as possible about the
+item and its files.
+
+---------------------------------------------------------------------------
+
+h2. Uploading the files
+
+One you have created the metadata files, use your FTP client to upload the
+directory containing the item files and the metadata files. In our example the
+directory uploaded would look like this:
+
+	MyHomeMovie/
+	MyHomeMovie/MyHomeMovie_files.xml
+	MyHomeMovie/MyHomeMovie_meta.xml
+	MyHomeMovie/MyHomeMovie.mpeg
+
+---------------------------------------------------------------------------
+
+h2. Telling the contribution engine to process the upload
+
+Once you have uploaded the directory the contribution engine needs to be
+informed to process your contribution. Doing so is simple. Assume our example
+film was uploaded by user@users.com. A HTTP GET should be issued to:
+
+     http://www.archive.org/services/contrib-submit.php?user_email=user@user.com&server=movies-uploads.archive.org&dir=MyHomeMovie
+
+Clearly you would adjust the parameters relevant to your contribution. Calling
+this URL will return an XML response. If the contribution was successful, it
+will look like this:
+
+	<result type="success">
+	  <message>
+	    Queued for format conversion and move to download server.
+	  </message>
+	  <url>
+	    http://www.archive.org/details/MyHomeMovie
+	  </url>
+	</result>  
+
+Otherwise, if there was a failure, it would look something like this:
+
+	<result type="error" code="missing_field">
+	  <message>
+	    The metadata is missing the following fields: collection, title
+	  </message>
+	</result>  
+
+If all is successful, the item will be added to the Archive and the URL tag in
+the returned XML will indicate the URL you can use to get to the details page
+for the item. Otherwise, the message will indicate what you need to fix.
