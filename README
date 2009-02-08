@@ -22,8 +22,8 @@ Use cases
 
 Classes
 
-A Payload contains Payload and has associated freeform metadata describing the
-Payload as a whole.
+A Payload contains PayloadFiles and has associated freeform metadata describing
+the Payload as a whole.
 
 A PayloadFile describes a single file within a payload, along with its freeform
 metadata.
