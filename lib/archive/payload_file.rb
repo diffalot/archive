@@ -1,9 +1,9 @@
+require 'archive/payload_file/metadata_store'
 module Archive
-  class PayloadFile
-    attr_accessor  :src_path
-
-    def sanitized_filename
+  class PayloadFile < Struct.new(
+      :filename
+      )
+    def contents
     end
-
   end
 end
