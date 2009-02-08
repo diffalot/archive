@@ -22,6 +22,21 @@ Use cases
 
 Classes
 
+A Payload contains Payload and has associated freeform metadata describing the
+Payload as a whole.
+
+A PayloadFile describes a single file within a payload, along with its freeform
+metadata.
+
+A repository contains many payloads. It can be a RemoteRepository or a Local
+Repository
+
+A PayloadInstance is a realization of a payload -- perhaps a directory on disk,
+or its instance on archive.org
+
+An ArchiveOrgFormatPayloadInstance is in archive.org format; it can be local or
+remote.
+
 * Payload -- specifies [PayloadItem]s to include and the associated metadata
 * PayloadItem -- a file within a payload
 
