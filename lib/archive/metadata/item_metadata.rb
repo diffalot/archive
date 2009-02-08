@@ -80,16 +80,32 @@ module Archive
       #
       def initialize *args
         super *args
-        raise "You must set an identifier" if (! self.identifier)
+        self.identifier ||= identifier_from_title
+        if (! self.identifier) 
+          raise "Please specify either an explicit identifier, or a title to generate an identifier from." 
+        end
         required_attributes.each{|attr| self[attr] ||= nil }
       end
 
+      #
+      # Identifiers can only contain letters, numbers, underscores, dashes, and
+      # dots (nothing else!)
+      #
+      def identifier_from_title
+        return unless title
+        title.gsub(/[^\w\-\.]+/, '_')
+      end
+      
       #
       # Convert to XML -- uses to_hash then to_xml
       #
       def to_xml options={}
         options[:root] ||= 'metadata'
         super options
+      end
+
+      def filename
+        "#{identifier}_meta.xml"
       end
     end
 

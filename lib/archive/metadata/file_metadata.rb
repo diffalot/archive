@@ -1,8 +1,9 @@
 module Archive
   module Metadata
-    class FileMetadata < Struct.new(
-        :identifier
-        )
+    module FileMetadata
+      def files_xml
+        items.to_xml(:root => 'files')
+      end
     end
   end
 end
