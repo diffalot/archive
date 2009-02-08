@@ -23,7 +23,7 @@ nohup.out
 
 /config/database.yml
 /config/development.sphinx.conf
-/config/private.yaml
+/config/*private*.yaml
 /public/ac/*
 /coverage
 /vendor/src/**/*
