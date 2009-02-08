@@ -7,3 +7,57 @@ COPYRIGHT
 =========
 
 Copyright (c) 2009 Papyromancer. See LICENSE for details.
+
+Use cases
+
+* create a payload
+  - add files
+  - specify payload metadata
+
+* transfer payload from one place to another
+  - check availability on destination
+  - create repository on destination
+  - transfer bundle (files and metadata files)
+  - verify transfer succeeded
+
+Classes
+
+* Payload -- specifies [PayloadItem]s to include and the associated metadata
+* PayloadItem -- a file within a payload
+
+* GenericPayloadInstance
+  - add items
+  - list items
+  - metadata_store
+  - load
+  - save
+
+* PayloadInstance::GenericRemote
+  - local_payload_instance
+  - fetch_from_remote
+  - send_to_remote
+
+* PayloadInstance::GenericLocalDir --
+  - root_path 		-- directory containing payload
+  - metadata_file_path   -- 
+  - listing_file_path    -- file on disk
+  - contents_file_paths	-- paths to the actual PayloadFiles on disk
+  
+* ArchiveOrg::RemotePayloadInstance -- the instantiation of a given payload on the
+  archive.org servers.
+
+* ArchiveOrg::LocalDirPayloadInstance --
+  - metadata_store      -- archive.org _meta.xml file on disk
+  - listing_store       -- archive.org _files.xml file on disk
+  - files 		-- the actual PayloadFiles on disk
+
+* ArchiveOrg::PayloadMetadataXml
+  - Archive.org format XML stream for metadata
+* ArchiveOrg::PayloadListingXml
+  - Archive.org format XML stream for file listing
+
+* TmpDirPayloadInstance 
+  Specifically locates payload instance in the tmp dir
+
+* PayloadTransferStrategy
+  Figures out how to transfer data from one payload instance to another
