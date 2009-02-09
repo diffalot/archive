@@ -167,6 +167,8 @@ module Archive
     def mkdir!
       FileUtils.mkdir_p base_path
     end
+  public
+
     # ---------------------------------------------------------------------------
     #
     # Sanity Checks
