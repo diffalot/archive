@@ -69,18 +69,6 @@ module Archive
         :identifier, :title, :description, :collection, :mediatype,
       ]
       self.recommended_attributes += [ :licenseurl ]
-
-      #
-      # Convert to XML -- uses to_hash then to_xml
-      #
-      def to_xml options={}
-        options[:root] ||= 'metadata'
-        super options
-      end
-
-      def filename
-        "#{identifier}_meta.xml"
-      end
     end
 
     #
