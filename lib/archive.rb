@@ -1,8 +1,9 @@
 require 'rubygems'
 require 'active_support'
-require 'archive/extensions'
-require 'archive/metadata'
 require 'archive/config'; Archive.load_config!
+require 'archive/extensions'
+require 'archive/api_response'
+require 'archive/repository'
 
 module Archive
   # Moved User into archive/session/user.rb

@@ -1,3 +1,4 @@
+require 'ostruct'
 OpenStruct.class_eval do
   #
   # Convert to XML using
