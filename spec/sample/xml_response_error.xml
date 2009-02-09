@@ -1,0 +1,5 @@
+<result type="error" code="missing_field">
+  <message>
+    The metadata is missing the following fields: collection, title
+  </message>
+</result>  
