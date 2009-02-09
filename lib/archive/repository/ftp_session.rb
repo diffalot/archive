@@ -2,54 +2,6 @@ module Archive
   module Session
 
     class FtpSession
-      def ftp_uri_str
-        [
-          'http://www.archive.org/create.php',
-          '?identifier=', archive_identifier,
-          '&xml=',        1,
-          '&user=',       archive_user,
-        ].join("")
-      end
-
-      def collection_server item
-        case item.collection
-        when :opensource_audio  then 'audio-uploads.archive.org'
-        when :opensource_movies then 'movies-uploads.archive.org'
-        else                         'items-uploads.archive.org' end
-      end
-
-      def available? item
-        # concatenate the service URL
-        checkurl = "http://www.archive.org/services/check_identifier.php?" \
-        "identifier=%s" % identifier
-
-        # make request
-        response = urllib2.urlopen(checkurl)
-        response_dom = xml.dom.minidom.parse(response)
-
-        # parse the response DOM
-        result = response_dom.getElementsByTagName("result")[0]
-        result_type = result.getAttribute("type")
-        result_code = result.getAttribute("code")
-
-        case
-        when result_type == 'error'
-          raise "MissingParameterException"
-        when (result_type == 'success') && (result_code == 'available')
-          return true
-        else return false
-        end
-      end
-
-      # The verification URL for a given archive.org item identifier.
-      def verification_url item
-        [
-          "http://www.archive.org/", item.mediatype,
-          '/', item.mediatype, "-details-db.php",
-          "?collection=",   item.collection,
-          '&collectionid=', item.identifier
-        ].join('')
-      end
 
     # def upload item
     # (self, username, password, server=None, callback=None):
