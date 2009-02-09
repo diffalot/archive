@@ -6,6 +6,12 @@ module Archive
 
   class Repository
 
+    #
+    # Checks if the payload exists
+    #
+    # Note that this does *not* reserve the identifier,
+    # so race conditions may exist.
+    #
     def exists? payload
     end
 
@@ -13,13 +19,16 @@ module Archive
       notify_of_creation
     end
 
+    #
+    # Verifies that a payload was successfully created
+    #
     def verify payload
     end
 
     def fetch payload
     end
 
-  private
+  protected
 
 
     # ---------------------------------------------------------------------------

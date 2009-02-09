@@ -1,7 +1,6 @@
 require 'set'
 module Archive
   module Metadata
-
     #
     #
     # Generates the IDENTIFIER_meta.xml file for bulk upload to archive.org.
@@ -30,7 +29,7 @@ module Archive
     #   You may optionally set a Creative Commons license for your item by
     #   setting licenseurl to one of the values from the list in
     #     docs/archive.org-list_of_licenses.txt
-    #   (Or see [Creative Commons' list]:http://creativecommons.org/licenses/publicdomain/location 
+    #   (Or see [Creative Commons' list]:http://creativecommons.org/licenses/publicdomain/location
     #   So, for example, if you wanted the Public Domain license, you would set
     #     item.licenseurl = 'http://creativecommons.org/licenses/publicdomain/'
     #
@@ -47,9 +46,9 @@ module Archive
     # a unique identifier of my_home_movie.
     #
     # my_home_movie = MovieItem.new :identifier => :my_home_movie,
-    #   :collection  => 'opensource_movies', 
+    #   :collection  => 'opensource_movies',
     #   :title       => 'My Home Movie',
-    #   :description => 'Our Vacation to the moon', 
+    #   :description => 'Our Vacation to the moon',
     #   :runtime     => '2:30',
     #   :director    => 'Joe Producer'
     #
@@ -65,37 +64,12 @@ module Archive
     #       </metadata>
     #
     #
-    class GenericItem < OpenStruct
-      class_inheritable_accessor :required_attributes
-      self.required_attributes = [
-        :identifier, :title, :description, :collection, :mediatype, :licenseurl
-      ].to_set
+    class GenericPayload
+      self.required_attributes += [
+        :identifier, :title, :description, :collection, :mediatype,
+      ]
+      self.recommended_attributes += [ :licenseurl ]
 
-      #
-      # Any unset attributes are initialized to nil, ensuring the corresponding
-      # empty tag is set in the metadata file in order to scold you into setting
-      # it.
-      #
-      # Maybe we should warn, instead.
-      #
-      def initialize *args
-        super *args
-        self.identifier ||= identifier_from_title
-        if (! self.identifier) 
-          raise "Please specify either an explicit identifier, or a title to generate an identifier from." 
-        end
-        required_attributes.each{|attr| self[attr] ||= nil }
-      end
-
-      #
-      # Identifiers can only contain letters, numbers, underscores, dashes, and
-      # dots (nothing else!)
-      #
-      def identifier_from_title
-        return unless title
-        title.gsub(/[^\w\-\.]+/, '_')
-      end
-      
       #
       # Convert to XML -- uses to_hash then to_xml
       #
@@ -110,30 +84,30 @@ module Archive
     end
 
     #
-    # Adds movie item fields: 
+    # Adds movie item fields:
     #   date, producer, production_company, director, contact, sponsor,
     #   description, runtime, color, sound, shotlist, segments, credits, and
     #   country.
     #
-    module MovieItemMetadata 
+    module MovieItemMetadata
       def self.included base
-        base.required_attributes += [
+        base.recommended_attributes += [
           :date, :producer, :production_company, :director, :contact, :sponsor,
           :description, :runtime, :color, :sound, :shotlist, :segments,
           :credits, :country
         ]
       end
     end
-    
+
     #
     # Movie item metadata object
     #
-    # Includes by default fields from GenericItem and
+    # Includes by default fields from GenericPayload and
     # AudioItemMetadata
     #
-    class MovieItem < GenericItem
+    class MovieItem < GenericPayload
       include MovieItemMetadata
-      
+
       def initialize *args
         super *args
         self.mediatype ||= :movie
@@ -142,7 +116,7 @@ module Archive
 
     #
     # Adds Audio item fields:
-    #   creator, description, taper, source, runtime, date, and notes. 
+    #   creator, description, taper, source, runtime, date, and notes.
     #
     module AudioItemMetadata
       def self.included base
@@ -154,10 +128,10 @@ module Archive
 
     # Metadata for an Audio item
     #
-    # Includes by default fields from GenericItem and
+    # Includes by default fields from GenericPayload and
     # AudioItemMetadata
     #
-    class AudioItem < GenericItem
+    class AudioItem < GenericPayload
       include AudioItemMetadata
     end
   end

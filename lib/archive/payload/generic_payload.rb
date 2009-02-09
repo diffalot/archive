@@ -7,21 +7,9 @@ module Archive
   class Payload
     attr_accessor :files
 
-    #
-    # Checks availability for the payload's identifier.
-    #
-    # returns true if the identifier is available,
-    # returns false if already in use.
-    #
-    # Note that this does *not* reserve the identifier, so race conditions may
-    # exist.
-    #
     def exists?
     end
 
-    #
-    # Verifies that a
-    #
     def verify
     end
 

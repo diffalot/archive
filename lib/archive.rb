@@ -4,6 +4,8 @@ require 'archive/config'; Archive.load_config!
 require 'archive/extensions'
 require 'archive/api_response'
 require 'archive/repository'
+require 'archive/payload'
+require 'archive/payload_file'
 
 module Archive
   # Moved User into archive/session/user.rb
