@@ -4,8 +4,11 @@ require 'archive/config'; Archive.load_config!
 require 'archive/extensions'
 require 'archive/api_response'
 require 'archive/repository'
-require 'archive/payload'
 require 'archive/payload_file'
+require 'archive/payload'
+require 'archive/payload/generic_payload'
+require 'archive/payload/audio_payload'
+require 'archive/payload/movie_payload'
 
 module Archive
   # Moved User into archive/session/user.rb

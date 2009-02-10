@@ -123,7 +123,7 @@ FILE_FORMATS = {
     'VBR ZIP',
     'Other',
   ],
-  'video':['MPEG2',
+  :video => ['MPEG2',
     'MPEG1',
     '64Kb MPEG4',
     '256Kb MPEG4',
@@ -140,7 +140,7 @@ FILE_FORMATS = {
     'Flash',
     'Other',
   ],
-  'text':['Text',
+  :text => ['Text',
     'HTML',
     'Book Cover',
     'Book Metadata',
@@ -149,7 +149,7 @@ FILE_FORMATS = {
     'RTF',
     'Other',
   ],
-  'image':['Thumbnail',
+  :image => ['Thumbnail',
     'JPEG',
     'TIFF',
     'BMP',
@@ -164,7 +164,7 @@ FILE_FORMATS = {
     'Targa',
     'Other',
   ],
-  'other' => [
+  :other => [
     'Games',
     'HTML',
     'Software',
@@ -173,3 +173,7 @@ FILE_FORMATS = {
     'Other',
   ]
 }
+
+
+# allowed file format strings
+File_formats = ["128Kbps MP3","128kbps M3U","160Kbps MP3","192Kbps MP3","24bit Flac","256Kb MPEG4","256Kb QuickTime","256Kbps MP3","320Kbps MP3","3GP","56Kb QuickTime","64Kb MPEG4","64Kb QuickTime","64Kbps M3U","64Kbps MP3","64Kbps MP3 ZIP","96Kbps MP3","AIFF","ARC","Abbyy GZ","Abbyy ZIP","Animated GIF","Article Metadata XML","Book Cover","Book Cover","Book Cover Image","Checksums","Cinepack","Collection Header","DAT","DV Video","DivX","DjVu","DjVuTXT","Djvu XML","Flac","Flac FingerPrint","Flash Video","Flippy ZIP","Grayscale LuraTech PDF","HTML","HiRes MPEG4","IV50","Image Container PDF","Item Image","JPEG","MPEG1","MPEG2","MPEG4","Metadata","Microfilm Original TIFF ZIP","Motion JPEG","Multi Page Original TIFF","Multi Page Processed TIFF","Ogg Theora","Ogg Vorbis","PDF","QuickTime","RAR","Real Media","Scribe Scandata ZIP","Shockwave Flash","Shorten","Single Book Page Text","Single Page FIXME JPEG Tar","Single Page FIXME JPEG ZIP","Single Page Library JP2 Tar","Single Page Library JP2 ZIP","Single Page Library TIFF ZIP","Single Page Original CR2 Tar","Single Page Original JP2 Tar","Single Page Original JP2 ZIP","Single Page Original JPEG","Single Page Original JPEG Tar","Single Page Original JPEG ZIP","Single Page Original TIFF","Single Page Original TIFF ZIP","Single Page Processed JP2 Tar","Single Page Processed JP2 ZIP","Single Page Processed JPEG","Single Page Processed JPEG Tar","Single Page Processed JPEG ZIP","Single Page Processed TIFF","Single Page Processed TIFF ZIP","Single Page Processed TIFF ZIP","Single Page Pure JP2 Tar","Single Page Pure JP2 ZIP","Single Page Raw JP2 Tar","Single Page Raw JP2 ZIP","Single Page Raw JPEG Tar","Single Page Raw JPEG ZIP","Single Page Watermark JP2 Tar","Single Page Watermark JP2 ZIP","Single Page Zipped PDF","Standard LuraTech PDF","TAR","TGZiped Text Files","Text","Thumbnail","VBR M3U","VBR MP3","VBR ZIP","WAVE","Windows Media","Windows Media Audio","ZIP","h.264 MPEG4"]
