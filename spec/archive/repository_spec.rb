@@ -7,6 +7,12 @@ describe Archive::Repository do
 
   before(:each) do
     @repository = Archive::Repository.new
+    @payload = Archive::InfochimpsPayload.new TEST_PAYLOADS_ROOT_DIR+"/complex",
+      :identifier  => :sample_002,
+      :title       => "Test File, please remove",
+      :description => 'Yes We Can speech, used as a test upload.  Please delete me.',
+      :mediatype   => 'data',
+      :files       => 'sample_contents_file.txt'
   end
 
   describe "when creating payload" do
@@ -14,9 +20,9 @@ describe Archive::Repository do
       @successful_response = Archive::ApiResponse.new(load_sample("xml_response_success.xml"))
       @error_response      = Archive::ApiResponse.new(load_sample("xml_response_error.xml"))
     end
-    
+
     # it "should fail with no payload"
-    
+
     it "should return the URL on success" do
       @repository.stub!(:tickle_creation_notifier).and_return(@successful_response)
       @repository.create(@payload).should == 'http://www.archive.org/details/MyHomeMovie'
@@ -26,6 +32,12 @@ describe Archive::Repository do
       @repository.stub!(:tickle_creation_notifier).and_return(@error_response)
       @repository.create(@payload).should be_nil
     end
+
+
+    it "should create a payload" do
+      puts @repository.send(@payload)
+    end
+
 
   end
 end

@@ -16,6 +16,7 @@ module Archive
     end
 
     def create payload
+      transfer_by_ftp payload
       notify_of_creation
     end
 
@@ -29,6 +30,19 @@ module Archive
     end
 
   protected
+    #
+    # FIXME -- should be own user?
+    #
+    def username
+      Archive.config[:library_card][:username]
+    end
+
+    #
+    # FIXME -- should be own user?
+    #
+    def password
+      Archive.config[:library_card][:password]
+    end
 
 
     # ---------------------------------------------------------------------------
@@ -40,6 +54,14 @@ module Archive
     #
     # create support
     #
+
+    def transfer_by_ftp payload
+      # ftp_connection do |ftp|
+      #   ftp.mkdir payload.identifier
+      #   ftp.cd    payload.identifier
+      #   ftp.put   Dir[payload.base_path + '*']
+      # end
+    end
 
     def tickle_creation_notifier
       # submitting a GET request to the notification_url
@@ -63,13 +85,22 @@ module Archive
       end
     end
 
+  public
+
+    def send payload
+      cmd = [
+        "curl",
+        "--ftp-create-dirs",
+        "--user '#{username}:#{password}'",
+        "--upload-file '#{payload.base_path}/{#{payload.listing.join(",")}}'",
+        "'ftp://#{submission_ftp_server(payload)}/#{payload.identifier}/'"
+        ].join(" ")
+    end
+
     # ---------------------------------------------------------------------------
     #
     # verify support
     #
-
-    def send payload
-    end
 
     # ---------------------------------------------------------------------------
     #
@@ -80,11 +111,18 @@ module Archive
       "http://www.archive.org/"
     end
 
-    def collection_server payload
-      case payload.collection
-      when :opensource_audio  then 'audio-uploads.archive.org'
-      when :opensource_movies then 'movies-uploads.archive.org'
-      else                         'items-uploads.archive.org' end
+    #
+    # The submission host at archive.org for that flavors of payload: movie,
+    # audio, other)
+    #
+    def submission_ftp_server payload
+      # Make sure to go most to least specific
+      case payload
+      when Archive::MoviePayload         then "movies-uploads.archive.org"
+      when Archive::AudioPayload         then "audio-uploads.archive.org"
+      when Archive::GenericPayload       then "items-uploads.archive.org"
+      else raise "Need to define a server for payloads of type #{payload.class.to_s}"
+      end
     end
 
     def creation_url

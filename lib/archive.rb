@@ -9,6 +9,7 @@ require 'archive/payload'
 require 'archive/payload/generic_payload'
 require 'archive/payload/audio_payload'
 require 'archive/payload/movie_payload'
+require 'archive/payload/infochimps_payload'
 
 module Archive
   # Moved User into archive/session/user.rb

@@ -66,6 +66,10 @@ module Archive
     # Archive.org format metadata files
     #
 
+    def metadata_contexts
+      [:payload_metadata, :files_listing]
+    end
+
     #
     # XML describing the payload metadata
     #
@@ -89,7 +93,7 @@ module Archive
       when :files_listing     then filename = "#{identifier}_files.xml"
       else raise "Don't know where to find metadata for #{context}"
       end
-      File.join(base_path, filename)
+      filename
     end
 
     #
@@ -97,8 +101,9 @@ module Archive
     #
     def save_metadata!
       sanity_check
-      [:payload_metadata, :files_listing].each do |context|
-        File.open(metadata_file_path(context), "w") do |metadata_file|
+      metadata_contexts.each do |context|
+        output_filename = File.join(base_path, metadata_file_path(context))
+        File.open(output_filename, "w") do |metadata_file|
           metadata_file << archive_org_metadata(context)
         end
       end
@@ -134,11 +139,15 @@ module Archive
       end
     end
 
+    def listing
+      files.map(&:to_s) + metadata_contexts.map{|context| metadata_file_path(context) }
+    end
+
     #
     # Copies each file into the payload directory
     # and adds it to the list of files
     #
-    def copy_over_and_add_files *files_to_add
+    def copy_and_add_files *files_to_add
       files_to_add = files_to_add.flatten # one, many, who cares
       files_to_add.each do |file_to_add|
         src_path     = file_to_add

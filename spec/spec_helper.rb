@@ -7,6 +7,7 @@ $: << ARCHIVE_ORG_LIB_DIR
 require 'archive'
 
 SAMPLES_DIR = ARCHIVE_ORG_ROOT_DIR+'/spec/sample' unless defined?(SAMPLES_DIR)
+TEST_PAYLOADS_ROOT_DIR = "/tmp/payloads"
 
 Spec::Runner.configure do |config|
 

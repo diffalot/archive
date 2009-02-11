@@ -29,6 +29,10 @@ module Archive
       { :format => 'txt', :sha1 => '14123l;sadf25314', :balls => {  :sub => 'what?' } }
     end
 
+    def to_s
+      path
+    end
+
     def to_xml options={}
       options['force_attr'] = false
       xml = options[:builder] ||= Builder::XmlMarkup.new(:indent => options[:indent])
