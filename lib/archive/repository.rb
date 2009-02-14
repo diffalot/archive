@@ -86,14 +86,18 @@ module Archive
 
   public
 
-    def send payload
+    #
+    # Send file to repository
+    # -- see ftp.rb for cmd line docs.
+    #
+    def self.send payload
       cmd = [
         "curl",
         "--ftp-create-dirs",
-        "--user '#{username}:#{password}'",
+        "--user        '#{username}:#{password}'",
         "--upload-file '#{payload.base_path}/{#{payload.listing.join(",")}}'",
         "'ftp://#{server_name(payload)}/#{payload.identifier}/'"
-        ].join(" ")
+      ].join(" ")
       $stderr.puts cmd
       puts `#{cmd}`
     end
