@@ -1,6 +1,7 @@
 require 'archive/repository/user'
 require 'archive/repository/exceptions'
 require 'archive/repository/ftp_session'
+require 'net/http'
 
 module Archive
 
@@ -16,7 +17,7 @@ module Archive
     end
 
     def create payload
-      transfer_by_ftp payload
+      send payload
       notify_of_creation
     end
 
@@ -54,29 +55,27 @@ module Archive
     #
     # create support
     #
-
-    def transfer_by_ftp payload
-      # ftp_connection do |ftp|
-      #   ftp.mkdir payload.identifier
-      #   ftp.cd    payload.identifier
-      #   ftp.put   Dir[payload.base_path + '*']
-      # end
-    end
-
-    def tickle_creation_notifier
+  public
+    def tickle_creation_notifier payload
       # submitting a GET request to the notification_url
-      begin
-        raw_response = File.read(File.dirname(__FILE__)+'/../../spec/sample/xml_response_success.xml')
-      rescue ; nil ; end
-      ApiResponse.new(raw_response)
+      # begin
+        url = URI.parse(notification_url(payload))
+      p [url, url.path]
+        req = Net::HTTP::Get.new(url.to_s)
+        raw_response = Net::HTTP.start(url.host, url.port) {|http|
+          http.request(req)
+        }
+      puts raw_response
+        ApiResponse.new(raw_response.body)
+      # rescue ; nil ; end
     end
 
     # Inform the contribution engine of the upload so that it processes
     # contribution, by issuing an HTTP GET tickle
-    def notify_of_creation
-      response = tickle_creation_notifier
+    def notify_of_creation payload
+      response = tickle_creation_notifier(payload)
       case
-      when response.success?
+      when response && response.success?
         # puts "Succeeded: #{response[:url]} - #{response[:message]}"
         response[:url]
       else
@@ -93,8 +92,10 @@ module Archive
         "--ftp-create-dirs",
         "--user '#{username}:#{password}'",
         "--upload-file '#{payload.base_path}/{#{payload.listing.join(",")}}'",
-        "'ftp://#{submission_ftp_server(payload)}/#{payload.identifier}/'"
+        "'ftp://#{server_name(payload)}/#{payload.identifier}/'"
         ].join(" ")
+      $stderr.puts cmd
+      puts `#{cmd}`
     end
 
     # ---------------------------------------------------------------------------
@@ -108,14 +109,14 @@ module Archive
     #
 
     def url_base
-      "http://www.archive.org/"
+      "http://www.archive.org"
     end
 
     #
     # The submission host at archive.org for that flavors of payload: movie,
     # audio, other)
     #
-    def submission_ftp_server payload
+    def server_name payload
       # Make sure to go most to least specific
       case payload
       when Archive::MoviePayload         then "movies-uploads.archive.org"
@@ -153,6 +154,9 @@ module Archive
       ].join('')
     end
 
+    # tickle_creation_notifier
+    #   http://www.archive.org/services/contrib-submit.php?user_email=archiver@infochimps.org&server=items-uploads.archive.org&dir=sample_002
+    #   http://www.archive.org/services/contrib-submit.php?user_email=dhruv@infochimps.org&server=items-uploads.archive.org&dir=sample_002
     def notification_url payload
       # http://www.archive.org/checkin.php?identifier=' + archive_identifier + '&xml=1&user=' + archive_user))
       # http://www.archive.org/services/contrib-submit.php?user_email=user@user.com&server=movies-uploads.archive.org&dir=MyHomeMovie
@@ -160,7 +164,7 @@ module Archive
         url_base,
         "/services/contrib-submit.php" \
         "?user_email=", username,
-        "&server=",     server_name(payload),
+        # "&server=",     server_name(payload),
         "&dir=",        payload.identifier,
       ].join('')
     end
