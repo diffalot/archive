@@ -17,7 +17,7 @@ module Archive
     end
 
     def create payload
-      send payload
+      upload payload
       notify_of_creation
     end
 
@@ -87,10 +87,10 @@ module Archive
   public
 
     #
-    # Send file to repository
+    # Upload file to repository
     # -- see ftp.rb for cmd line docs.
     #
-    def self.send payload
+    def upload payload
       cmd = [
         "curl",
         "--ftp-create-dirs",
@@ -99,7 +99,9 @@ module Archive
         "'ftp://#{server_name(payload)}/#{payload.identifier}/'"
       ].join(" ")
       $stderr.puts cmd
+      # FIXME -- should go to log
       puts `#{cmd}`
+      true
     end
 
     # ---------------------------------------------------------------------------
