@@ -63,7 +63,7 @@ module Archive
   #       </metadata>
   #
   #
-  class GenericPayload < Payload
+  class GenericItem < Item
     self.required_attributes += [
       :identifier, :title, :description, :collection, :mediatype,
     ]

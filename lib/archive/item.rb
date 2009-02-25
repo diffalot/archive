@@ -1,7 +1,7 @@
 require 'fileutils'
 module Archive
-  class Payload < OpenStruct
-    attr_accessor  :files, :base_path
+  class Item < OpenStruct
+    attr_accessor :files, :base_path
     #
     #
     def initialize base_path, attr_hash
@@ -15,12 +15,12 @@ module Archive
       self.files = []
       self << initial_files if initial_files
     end
-
+ 
     # ---------------------------------------------------------------------------
     #
     # Metadata Attributes
     #
-
+ 
     # These attributes are required for acceptance
     class_inheritable_accessor :required_attributes
     self.required_attributes = [].to_set
@@ -32,7 +32,7 @@ module Archive
     def expected_attributes
       required_attributes + recommended_attributes
     end
-
+ 
   protected
     # Any unset attributes are initialized to nil, ensuring the corresponding
     # empty tag is set in the metadata file in order to scold you into setting
@@ -40,7 +40,7 @@ module Archive
     def register_expected_attributes
       expected_attributes.each{|attr| self[attr] ||= nil }
     end
-
+ 
     #
     # Checks that identifier either exists or can be pulled from the title
     #
@@ -50,7 +50,7 @@ module Archive
         raise "Please specify either an explicit identifier, or a title to generate an identifier from."
       end
     end
-
+ 
     #
     # Identifiers can only contain letters, numbers, underscores, dashes, and
     # dots (nothing else!)
@@ -60,16 +60,16 @@ module Archive
       title.downcase.gsub(/[^\w\-\.]+/, '_')
     end
   public
-
+ 
     # ---------------------------------------------------------------------------
     #
     # Archive.org format metadata files
     #
-
+ 
     def metadata_contexts
       [:payload_metadata, :files_listing]
     end
-
+ 
     #
     # XML describing the payload metadata
     #
@@ -86,16 +86,16 @@ module Archive
         raise "Don't know how to generate metadata for #{context}"
       end
     end
-
+ 
     def metadata_file_path context
       case context
-      when :payload_metadata  then filename = "#{identifier}_meta.xml"
-      when :files_listing     then filename = "#{identifier}_files.xml"
+      when :payload_metadata then filename = "#{identifier}_meta.xml"
+      when :files_listing then filename = "#{identifier}_files.xml"
       else raise "Don't know where to find metadata for #{context}"
       end
       filename
     end
-
+ 
     #
     # Writes the metadata out to disk
     #
@@ -108,22 +108,22 @@ module Archive
         end
       end
     end
-
+ 
     # ---------------------------------------------------------------------------
     #
     # Contained Files
     #
-
+ 
     # The contained PayloadFiles
     attr_reader :files
-
+ 
     #
     # Alias for add_files
     #
     def <<(*files_to_add)
       add_files *files_to_add
     end
-
+ 
     #
     # Adds the given (PayloadFiles or file paths) to the payload
     #
@@ -138,11 +138,11 @@ module Archive
         end
       end
     end
-
+ 
     def listing
       files.map(&:to_s) + metadata_contexts.map{|context| metadata_file_path(context) }
     end
-
+ 
     #
     # Copies each file into the payload directory
     # and adds it to the list of files
@@ -150,8 +150,8 @@ module Archive
     def copy_and_add_files *files_to_add
       files_to_add = files_to_add.flatten # one, many, who cares
       files_to_add.each do |file_to_add|
-        src_path     = file_to_add
-        dest_path    = File.basename(file_to_add)
+        src_path = file_to_add
+        dest_path = File.basename(file_to_add)
         payload_file = PayloadFile.new(self, dest_path)
         # Copy the file over
         mkdir!
@@ -160,7 +160,7 @@ module Archive
         self << payload_file
       end
     end
-
+ 
     def self.new_from_dir base_path, payload_metadata={}
       identifier = File.basename(base_path)
       # include all the files in there
@@ -171,18 +171,18 @@ module Archive
       payload_metadata = payload_metadata.reverse_merge :identifier => identifier, :files => files
       new base_path, payload_metadata
     end
-
+ 
   protected
     def mkdir!
       FileUtils.mkdir_p base_path
     end
   public
-
+ 
     # ---------------------------------------------------------------------------
     #
     # Sanity Checks
     #
-
+ 
     #
     # Perform sanity checks before transmission
     # raises if there are problems
@@ -192,7 +192,7 @@ module Archive
       sanity_check_has_files
       true # nothing raised, so: success
     end
-
+ 
     #
     # Sanity check, but warn -- don't raise
     # returns true/nil for passed/failed
@@ -205,7 +205,7 @@ module Archive
         nil
       end
     end
-
+ 
   protected
     def sanity_check_required_attributes
       required_attributes.each do |attr|
@@ -218,6 +218,6 @@ module Archive
       end
     end
   public
-
+ 
   end
 end

@@ -1,12 +1,12 @@
 module Archive
 
   #
-  # Adds movie payload fields:
+  # Adds movie item fields:
   #   date, producer, production_company, director, contact, sponsor,
   #   description, runtime, color, sound, shotlist, segments, credits, and
   #   country.
   #
-  module MoviePayloadMetadata
+  module MovieItemMetadata
     def self.included base
       base.recommended_attributes += [
         :date, :producer, :production_company, :director, :contact, :sponsor,
@@ -17,13 +17,12 @@ module Archive
   end
 
   #
-  # Movie payload metadata object
+  # Movie item metadata object
   #
-  # Includes by default fields from GenericPayload and
-  # AudioPayloadMetadata
+  # Includes by default fields from GenericItem
   #
-  class MoviePayload < GenericPayload
-    include MoviePayloadMetadata
+  class MovieItem < GenericItem
+    include MovieItemMetadata
 
     def initialize *args
       super *args
